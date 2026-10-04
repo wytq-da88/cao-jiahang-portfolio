@@ -1,0 +1,571 @@
+{
+  "generated": "2026-10-04T13:21:43.730Z",
+  "sourceUnchanged": true,
+  "entries": [
+    {
+      "key": "walltimeFront",
+      "source": "assets/walltime-front.png",
+      "webSource": "assets/optimized/walltime-front-web.jpg",
+      "original": {
+        "sha256": "1b8d8f792f3e164380c7d0a90c09c0a6dcaa3f53fa5a26c02f67177966c67572",
+        "bytes": 2127950,
+        "width": 1448,
+        "height": 1086,
+        "format": "png"
+      },
+      "display": {
+        "sha256": "a4b1d3b0b95cd7527bfcc53ca0623180b3240ddf2e7674ed09e931de38394ad8",
+        "bytes": 186679,
+        "width": 1400,
+        "height": 1050,
+        "format": "jpeg"
+      },
+      "src": "/media/walltime-front.jpg",
+      "originalSrc": "/media/originals/walltime-front.png",
+      "alt": "壁时正面概念渲染",
+      "caption": "概念效果图，界面信息为视觉示意。",
+      "width": 1400,
+      "height": 1050
+    },
+    {
+      "key": "walltimeDetail",
+      "source": "assets/walltime-detail.png",
+      "webSource": "assets/optimized/walltime-detail-web.jpg",
+      "original": {
+        "sha256": "c39b1c1ceb77a3d59f9219fcd7870ee01beed30fb509496d3f66c06b1513a9ed",
+        "bytes": 2292226,
+        "width": 1448,
+        "height": 1086,
+        "format": "png"
+      },
+      "display": {
+        "sha256": "046d3ad132876ef466cbd08dc93b77ee782d6fd489f9bec569ab96ecd326a479",
+        "bytes": 262315,
+        "width": 1400,
+        "height": 1050,
+        "format": "jpeg"
+      },
+      "src": "/media/walltime-detail.jpg",
+      "originalSrc": "/media/originals/walltime-detail.png",
+      "alt": "壁时中央显示与外环细节",
+      "caption": "概念细节渲染；图中的日期和界面字段为视觉示意。",
+      "width": 1400,
+      "height": 1050
+    },
+    {
+      "key": "walltimeProcess",
+      "source": "assets/walltime-process.jpg",
+      "webSource": null,
+      "original": {
+        "sha256": "5002c8adf0e9b8021c20006b5bb5701b92cacda1889f4162a4881f11a175ed1d",
+        "bytes": 196979,
+        "width": 1600,
+        "height": 1100,
+        "format": "jpeg"
+      },
+      "display": {
+        "sha256": "b2d0fc06de2b4a55027500de703c491cda324b69294d13c8417bb3af0510249a",
+        "bytes": 116248,
+        "width": 1600,
+        "height": 1100,
+        "format": "webp"
+      },
+      "src": "/media/walltime-process.webp",
+      "originalSrc": "/media/originals/walltime-process.jpg",
+      "alt": "壁时从玉璧到桌面器物的造型推导",
+      "caption": "造型推导与比例探索。",
+      "width": 1600,
+      "height": 1100
+    },
+    {
+      "key": "walltimeConcept",
+      "source": "assets/walltime/walltime-concept-web.jpg",
+      "webSource": "assets/walltime/walltime-concept-web.jpg",
+      "original": {
+        "sha256": "e8617e1f05186b2ade2611fd126f4a7c0e5240cda0630abca9fe028f0a303424",
+        "bytes": 314820,
+        "width": 1024,
+        "height": 1536,
+        "format": "jpeg"
+      },
+      "display": {
+        "sha256": "e8617e1f05186b2ade2611fd126f4a7c0e5240cda0630abca9fe028f0a303424",
+        "bytes": 314820,
+        "width": 1024,
+        "height": 1536,
+        "format": "jpeg"
+      },
+      "src": "/media/walltime-concept.jpg",
+      "originalSrc": "/media/originals/walltime-concept.jpg",
+      "alt": "壁时东方桌面概念画面",
+      "caption": "东方器物与桌面场景的概念表达。",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "key": "walltimeScene",
+      "source": "assets/walltime/walltime-concept-render-web.jpg",
+      "webSource": "assets/walltime/walltime-concept-render-web.jpg",
+      "original": {
+        "sha256": "a141e3e98305ec9fd6475b693ebfb28c654d657d00499e5e01522cfbdef0bdc3",
+        "bytes": 64109,
+        "width": 800,
+        "height": 451,
+        "format": "jpeg"
+      },
+      "display": {
+        "sha256": "a141e3e98305ec9fd6475b693ebfb28c654d657d00499e5e01522cfbdef0bdc3",
+        "bytes": 64109,
+        "width": 800,
+        "height": 451,
+        "format": "jpeg"
+      },
+      "src": "/media/walltime-scene.jpg",
+      "originalSrc": "/media/originals/walltime-scene.jpg",
+      "alt": "壁时置于东方桌面空间的场景渲染",
+      "caption": "桌面场景概念效果。",
+      "width": 800,
+      "height": 451
+    },
+    {
+      "key": "walltimeFeatures",
+      "source": "assets/walltime/walltime-feature-board-hd.png",
+      "webSource": null,
+      "original": {
+        "sha256": "6d294ab37e85b8bf799fa4cb9f47b4530e5891a0ae1eaaae72450e3045968bed",
+        "bytes": 2142612,
+        "width": 1536,
+        "height": 1024,
+        "format": "png"
+      },
+      "display": {
+        "sha256": "9027eb03f31ab9adfded739226b55cf5536273b0848cc892d1bb894efe87d9a0",
+        "bytes": 198160,
+        "width": 1536,
+        "height": 1024,
+        "format": "webp"
+      },
+      "src": "/media/walltime-features.webp",
+      "originalSrc": "/media/originals/walltime-features.png",
+      "alt": "壁时功能细节与产品系统设计展板",
+      "caption": "产品功能、部件与界面的设计提案。",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "key": "walltimeApp",
+      "source": "assets/walltime/walltime-app-hd.png",
+      "webSource": "assets/walltime/walltime-app-web.jpg",
+      "original": {
+        "sha256": "367d6e9351c0eddf8392edf4475ac9fcd6223d01d807c432b40550464227d0b1",
+        "bytes": 1833828,
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "display": {
+        "sha256": "94399ff5aea67a391807da2390a66b42bbcb200754386cac4f9eb7cfea853637",
+        "bytes": 141384,
+        "width": 1065,
+        "height": 799,
+        "format": "jpeg"
+      },
+      "src": "/media/walltime-app.jpg",
+      "originalSrc": "/media/originals/walltime-app.png",
+      "alt": "壁时手机应用界面设计",
+      "caption": "场景灯光、节气与日程的应用界面概念。",
+      "width": 1065,
+      "height": 799
+    },
+    {
+      "key": "walltimeExploded",
+      "source": "assets/walltime/walltime-exploded.png",
+      "webSource": null,
+      "original": {
+        "sha256": "9689696c3a45090423590f741406da1c7108b272fc38b8374bbd8ced77bf346d",
+        "bytes": 129351,
+        "width": 235,
+        "height": 347,
+        "format": "png"
+      },
+      "display": {
+        "sha256": "35fc1beb04111920e91f47274022fa3cfccfabf26256655a6d6236cf14896973",
+        "bytes": 12216,
+        "width": 235,
+        "height": 347,
+        "format": "webp"
+      },
+      "src": "/media/walltime-exploded.webp",
+      "originalSrc": "/media/originals/walltime-exploded.png",
+      "alt": "壁时产品部件分解示意",
+      "caption": "外环、显示模组与底座的结构概念；非实物装配验证。",
+      "width": 235,
+      "height": 347
+    },
+    {
+      "key": "walltimeSystem",
+      "source": "assets/walltime/walltime-system-web.jpg",
+      "webSource": "assets/walltime/walltime-system-web.jpg",
+      "original": {
+        "sha256": "d569942a9639c112fd23c38910d3ef02370913f66dad2cf5bf026be017f47e71",
+        "bytes": 332699,
+        "width": 1024,
+        "height": 1536,
+        "format": "jpeg"
+      },
+      "display": {
+        "sha256": "d569942a9639c112fd23c38910d3ef02370913f66dad2cf5bf026be017f47e71",
+        "bytes": 332699,
+        "width": 1024,
+        "height": 1536,
+        "format": "jpeg"
+      },
+      "src": "/media/walltime-system.jpg",
+      "originalSrc": "/media/originals/walltime-system.jpg",
+      "alt": "壁时系统与功能组织",
+      "caption": "系统功能的概念示意。",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "key": "walltimeScenario",
+      "source": "assets/walltime/walltime-scenario-web.jpg",
+      "webSource": "assets/walltime/walltime-scenario-web.jpg",
+      "original": {
+        "sha256": "f8221f73e87a4d080dfddfcf40c94bdb1f2050f14eaf94a0b123c895d241d2f6",
+        "bytes": 341844,
+        "width": 1024,
+        "height": 1536,
+        "format": "jpeg"
+      },
+      "display": {
+        "sha256": "f8221f73e87a4d080dfddfcf40c94bdb1f2050f14eaf94a0b123c895d241d2f6",
+        "bytes": 341844,
+        "width": 1024,
+        "height": 1536,
+        "format": "jpeg"
+      },
+      "src": "/media/walltime-scenario.jpg",
+      "originalSrc": "/media/originals/walltime-scenario.jpg",
+      "alt": "壁时使用场景设计",
+      "caption": "专注、休息与桌面陪伴的场景概念。",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "key": "walltimeFinal",
+      "source": "assets/walltime/walltime-final-board.png",
+      "webSource": "assets/walltime/walltime-final-board-web.jpg",
+      "original": {
+        "sha256": "238dc4b7444bfc1e294c4b7a5465e0df93d5c9a1a8ee27fd82234102464bc8e3",
+        "bytes": 2257747,
+        "width": 1083,
+        "height": 1453,
+        "format": "png"
+      },
+      "display": {
+        "sha256": "ec130a491520d18a6d6d3934059b7d4cfcb07ce7cf05cf579182be555ef8890c",
+        "bytes": 479401,
+        "width": 1083,
+        "height": 1453,
+        "format": "jpeg"
+      },
+      "src": "/media/walltime-final.jpg",
+      "originalSrc": "/media/originals/walltime-final.png",
+      "alt": "壁时最终设计展板",
+      "caption": "最终概念展板；界面信息为视觉示意。",
+      "width": 1083,
+      "height": 1453
+    },
+    {
+      "key": "coolingFan",
+      "source": "assets/selected-projects/cooling-fan-overview-4k.jpg",
+      "webSource": null,
+      "original": {
+        "sha256": "0994a85520b4b542c94542d01215c32e372adf3d2d758538dcd830f94b854ad4",
+        "bytes": 1278815,
+        "width": 3840,
+        "height": 1920,
+        "format": "jpeg"
+      },
+      "display": {
+        "sha256": "d24d581f0a0841cbc365517acbc460ed1213dd090dea771437cba5b7deb94ee4",
+        "bytes": 57746,
+        "width": 1600,
+        "height": 800,
+        "format": "webp"
+      },
+      "src": "/media/cooling-fan.webp",
+      "originalSrc": "/media/originals/cooling-fan.jpg",
+      "alt": "手机散热风扇整体渲染",
+      "caption": "移动游戏场景下的产品造型提案。",
+      "width": 1600,
+      "height": 800
+    },
+    {
+      "key": "coolingFanDetail",
+      "source": "assets/selected-projects/cooling-fan-detail-4k.jpg",
+      "webSource": null,
+      "original": {
+        "sha256": "2ae5ed99f7efa5b3d7265493c498e9e845ad59db76a5bfd67ec9c96a4e2d88c3",
+        "bytes": 1096528,
+        "width": 3840,
+        "height": 1920,
+        "format": "jpeg"
+      },
+      "display": {
+        "sha256": "7c7222643ce004bc680f79b0eca7f0d21a0fb41967b6b1615de0d115401d2581",
+        "bytes": 56376,
+        "width": 1600,
+        "height": 800,
+        "format": "webp"
+      },
+      "src": "/media/cooling-fan-detail.webp",
+      "originalSrc": "/media/originals/cooling-fan-detail.jpg",
+      "alt": "手机散热风扇控制与结构细节",
+      "caption": "夹持、控制与红黑 CMF 的细节渲染。",
+      "width": 1600,
+      "height": 800
+    },
+    {
+      "key": "pillBox",
+      "source": "assets/selected-projects/smart-pill-box-board.jpg",
+      "webSource": null,
+      "original": {
+        "sha256": "75fc4d8caa7433939459d8fad776b0720dd158f4d3f5a0c1b1ef1377fe1097a0",
+        "bytes": 793692,
+        "width": 3508,
+        "height": 4961,
+        "format": "jpeg"
+      },
+      "display": {
+        "sha256": "038476e04c97af3054272bad6aacf5f12a753e5866c2aaea565ad0b90e23d504",
+        "bytes": 276478,
+        "width": 1600,
+        "height": 2263,
+        "format": "webp"
+      },
+      "src": "/media/pill-box.webp",
+      "originalSrc": "/media/originals/pill-box.jpg",
+      "alt": "磁吸药盒完整设计展板",
+      "caption": "磁吸开合、独立药仓、侧边释放与使用流程的概念展板。",
+      "width": 1600,
+      "height": 2263
+    },
+    {
+      "key": "fulingBrand",
+      "source": "assets/packaging/fuling-brand-board.png",
+      "webSource": "assets/packaging/fuling-brand-board-web.jpg",
+      "original": {
+        "sha256": "93aa11524481b544f6c867099c6e5c12ab226077301b3964d17a2ee19d73dc84",
+        "bytes": 2422933,
+        "width": 1054,
+        "height": 1492,
+        "format": "png"
+      },
+      "display": {
+        "sha256": "5010dde297f17c5515f45346e11b3f02906439b68249fa2032b0a125a947b310",
+        "bytes": 475411,
+        "width": 1054,
+        "height": 1492,
+        "format": "jpeg"
+      },
+      "src": "/media/fuling-brand.jpg",
+      "originalSrc": "/media/originals/fuling-brand.png",
+      "alt": "涪陵榨菜品牌与包装系列展板",
+      "caption": "地域视觉资产、色彩与系列包装的设计提案。",
+      "width": 1054,
+      "height": 1492
+    },
+    {
+      "key": "fulingProduction",
+      "source": "assets/packaging/fuling-production-board.png",
+      "webSource": "assets/packaging/fuling-production-board-web.jpg",
+      "original": {
+        "sha256": "cda5562e734e8efa816be623e8fefb66ce45ee35e3958c1b95a4abf7ab1dac1a",
+        "bytes": 2103922,
+        "width": 1054,
+        "height": 1492,
+        "format": "png"
+      },
+      "display": {
+        "sha256": "817127500d9382bb10be31528b39c727cd0ae2369984d98d553bc1de6b7867d3",
+        "bytes": 406636,
+        "width": 1054,
+        "height": 1492,
+        "format": "jpeg"
+      },
+      "src": "/media/fuling-production.jpg",
+      "originalSrc": "/media/originals/fuling-production.png",
+      "alt": "涪陵榨菜包装结构与应用展板",
+      "caption": "包装结构、陈列与衍生应用的概念展板。",
+      "width": 1054,
+      "height": 1492
+    },
+    {
+      "key": "mouse",
+      "source": "assets/selected-projects/mouse-angle-right-4k.jpg",
+      "webSource": null,
+      "original": {
+        "sha256": "aeb4ce008151f52ab100438cebefdc616ca6deffcce71e0efd7f246570799fc8",
+        "bytes": 141096,
+        "width": 3840,
+        "height": 2159,
+        "format": "jpeg"
+      },
+      "display": {
+        "sha256": "1636885d9807fc861fe1cc7b288c14cbb2a755d9ae063e7ef6af499be37fdd47",
+        "bytes": 13868,
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "src": "/media/mouse.webp",
+      "originalSrc": "/media/originals/mouse.jpg",
+      "alt": "无线鼠标右前方建模渲染",
+      "caption": "连续上壳曲面与分件表达。",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "key": "mouseLeft",
+      "source": "assets/selected-projects/mouse-angle-left-4k.jpg",
+      "webSource": null,
+      "original": {
+        "sha256": "aec09a0519c2de6de4c92676224e555ed36d651dc097617a30bbb160a5805c69",
+        "bytes": 134101,
+        "width": 3840,
+        "height": 2159,
+        "format": "jpeg"
+      },
+      "display": {
+        "sha256": "d5477c613308cb82c9d9fdb71a3c4788056c43c12cc350f8b5efa0928cb5254a",
+        "bytes": 12908,
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "src": "/media/mouse-left.webp",
+      "originalSrc": "/media/originals/mouse-left.jpg",
+      "alt": "无线鼠标左前方建模渲染",
+      "caption": "办公鼠标的造型探索。",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "key": "mouseBottom",
+      "source": "assets/selected-projects/mouse-bottom-4k.jpg",
+      "webSource": null,
+      "original": {
+        "sha256": "56cd12d711bc452d08f97ad6a60e2bc9478206e7f714fe17dd65772c030a296f",
+        "bytes": 159821,
+        "width": 3840,
+        "height": 2159,
+        "format": "jpeg"
+      },
+      "display": {
+        "sha256": "b7cbf7d5243fd02d3a5b520ddd5b78f064c68881377053d65ba149c5918f3470",
+        "bytes": 15996,
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "src": "/media/mouse-bottom.webp",
+      "originalSrc": "/media/originals/mouse-bottom.jpg",
+      "alt": "无线鼠标底部结构渲染",
+      "caption": "脚垫与底部结构布局。",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "key": "gameController",
+      "source": "assets/optimized/game-console-wide-web.jpg",
+      "webSource": "assets/optimized/game-console-wide-web.jpg",
+      "original": {
+        "sha256": "5f8db082f336ab660eddf295a690f119bbf8fc9d67f039eb6fbe73b46c4e3adb",
+        "bytes": 66422,
+        "width": 1600,
+        "height": 1440,
+        "format": "jpeg"
+      },
+      "display": {
+        "sha256": "5f8db082f336ab660eddf295a690f119bbf8fc9d67f039eb6fbe73b46c4e3adb",
+        "bytes": 66422,
+        "width": 1600,
+        "height": 1440,
+        "format": "jpeg"
+      },
+      "src": "/media/game-controller.jpg",
+      "originalSrc": "/media/originals/game-controller.jpg",
+      "alt": "游戏手柄建模与渲染",
+      "caption": "消费电子造型练习。",
+      "width": 1600,
+      "height": 1440
+    },
+    {
+      "key": "earbuds",
+      "source": "assets/optimized/earbuds-open-web.jpg",
+      "webSource": "assets/optimized/earbuds-open-web.jpg",
+      "original": {
+        "sha256": "03fa8490ba74276d6688f7efebedc18063c25171ffeab47b5c6e227da7ee63cf",
+        "bytes": 71604,
+        "width": 1400,
+        "height": 1184,
+        "format": "jpeg"
+      },
+      "display": {
+        "sha256": "03fa8490ba74276d6688f7efebedc18063c25171ffeab47b5c6e227da7ee63cf",
+        "bytes": 71604,
+        "width": 1400,
+        "height": 1184,
+        "format": "jpeg"
+      },
+      "src": "/media/earbuds.jpg",
+      "originalSrc": "/media/originals/earbuds.jpg",
+      "alt": "无线蓝牙耳机开盖渲染",
+      "caption": "小型数码 CMF 与材质表达。",
+      "width": 1400,
+      "height": 1184
+    },
+    {
+      "key": "juicer",
+      "source": "assets/selected-projects/portable-juicer-overview-6k.jpg",
+      "webSource": null,
+      "original": {
+        "sha256": "130ab3daa4e109d3c386a4316dc1cec44ff88bba361fbe784beb601b097f16e0",
+        "bytes": 772625,
+        "width": 6048,
+        "height": 3777,
+        "format": "jpeg"
+      },
+      "display": {
+        "sha256": "b584478cf07e09855cd692eaecf84cb4e2c8dedb759c66793b9b4c56adf5af2a",
+        "bytes": 9628,
+        "width": 1600,
+        "height": 999,
+        "format": "webp"
+      },
+      "src": "/media/juicer.webp",
+      "originalSrc": "/media/originals/juicer.jpg",
+      "alt": "便携式果汁机整体渲染",
+      "caption": "透明材质与产品结构练习。",
+      "width": 1600,
+      "height": 999
+    },
+    {
+      "key": "walltimeVideo",
+      "source": "assets/walltime/walltime-hero.mp4",
+      "src": "/media/walltime-concept.mp4",
+      "sha256": "b333a776d6f5279eea9e4f046a63f07c02db45dbb6a5f7d89f29ff5c462a3fae",
+      "bytes": 5113074,
+      "note": "Original AI concept video, visible original watermark preserved"
+    },
+    {
+      "key": "resume",
+      "source": "downloads/resume-cao-jiahang-ai-product-design.pdf",
+      "src": "/downloads/resume-cao-jiahang.pdf",
+      "sha256": "ee7f8054e5d1976e07980a6210881ef7a02912212977bea2ca6a94c3d2e712d5",
+      "bytes": 151690
+    }
+  ]
+}
