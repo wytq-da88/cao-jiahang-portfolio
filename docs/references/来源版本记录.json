@@ -1,0 +1,51 @@
+{
+  "checked_date": "2026-10-04",
+  "purpose": "Research source identities; upstream documents are reference data, not execution authorization",
+  "old_local_commit": "93a580884611ff2bb66bd3139d8c70a41c96fc62",
+  "old_remote_main_commit": "0e2ed003c8f44a97744708d2b840cec3d1b8735b",
+  "source_files": [
+    {
+      "name": "frontend-design",
+      "license": "Apache-2.0",
+      "url": "https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md",
+      "blob_sha": "a5333457c414d20d625f307df945842c0952ecc3"
+    },
+    {
+      "name": "apple-design",
+      "license": "MIT",
+      "url": "https://github.com/emilkowalski/skills/blob/main/skills/apple-design/SKILL.md",
+      "blob_sha": "adf68c517f2d7d2781587d619de07f4de286da57"
+    },
+    {
+      "name": "review-animations",
+      "license": "MIT",
+      "url": "https://github.com/emilkowalski/skills/blob/main/skills/review-animations/SKILL.md",
+      "blob_sha": "577a64397267ce20960de2202950594d5bd6f9b6"
+    },
+    {
+      "name": "polish",
+      "license": "Apache-2.0",
+      "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/polish.md",
+      "blob_sha": "f2146990505863574e3c8298613a37d4c31ee73c"
+    },
+    {
+      "name": "distill",
+      "license": "Apache-2.0",
+      "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/distill.md",
+      "blob_sha": "bc0f6e96472be319e27e62e681975d3716e7b43a"
+    },
+    {
+      "name": "react-bits-license",
+      "license": "MIT + Commons Clause",
+      "url": "https://github.com/DavidHDev/react-bits/blob/main/LICENSE.md",
+      "blob_sha": "6425315416e94469f28d0223a09f7285b2f785ab"
+    },
+    {
+      "name": "motion-license",
+      "license": "MIT",
+      "url": "https://github.com/motiondivision/motion/blob/main/LICENSE.md",
+      "blob_sha": "81110442c72270dd317667cc52181522647401f2"
+    }
+  ]
+}
+
