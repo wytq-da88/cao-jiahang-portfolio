@@ -48,4 +48,18 @@ describe('enhanced gallery retains native image access',()=>{
     render(<MediaGallery items={[items[0]]}/>);fireEvent.error(screen.getByRole('img',{name:'首图'}));
     expect(screen.getByText('图片暂时无法加载')).toBeInTheDocument();expect(screen.getByText('正面概念')).toBeInTheDocument();expect(screen.getByRole('link',{name:'查看首图原图'})).toHaveAttribute('href','/media/originals/a.png');
   });
+  it('shows a preview while the original loads and resets feedback when switching',async()=>{
+    const user=userEvent.setup();render(<MediaGallery items={items}/>);
+    await user.click(screen.getByRole('link',{name:'查看首图原图'}));
+    const dialog=screen.getByRole('dialog');
+    expect(within(dialog).getByRole('status')).toHaveTextContent('正在加载原图');
+    expect(dialog.querySelector('.lightbox-preview')).toHaveAttribute('src','/media/a.jpg');
+    fireEvent.load(within(dialog).getByRole('img',{name:'首图，原图'}));
+    expect(within(dialog).queryByRole('status')).not.toBeInTheDocument();
+    await user.click(within(dialog).getByRole('button',{name:'下一张'}));
+    expect(within(dialog).getByRole('status')).toHaveTextContent('正在加载原图');
+    fireEvent.error(within(dialog).getByRole('img',{name:'第二张，原图'}));
+    expect(within(dialog).getByText('图片暂时无法加载')).toBeInTheDocument();
+    expect(within(dialog).getByRole('link',{name:'在新页面查看原图 ↗'})).toHaveAttribute('href','/media/originals/b.png');
+  });
 });

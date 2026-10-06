@@ -15,7 +15,7 @@ text = ''.join(chr(i) for i in range(32, 127))
 for directory in (root / 'app', root / 'components', root / 'data'):
     for path in directory.rglob('*'):
         if path.suffix in ('.js', '.jsx', '.json'):
-            text += ''.join(re.findall(r'[\u3000-\u9fff]', path.read_text(encoding='utf-8')))
+            text += ''.join(re.findall(r'[\u2000-\u206f\u3000-\u9fff\uff00-\uffef]', path.read_text(encoding='utf-8')))
 options = subset.Options()
 options.name_IDs = ['*']
 options.name_legacy = True

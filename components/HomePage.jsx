@@ -7,7 +7,7 @@ export default function HomePage() {
   const clock = portfolio.projects[0];
   return <main id="main-content" tabIndex={-1}>
     <section className="home-hero dark-stage"><div className="shell hero-grid">
-      <div className="hero-copy"><p className="eyebrow"><span className="fine-line" /> 东方器物研究室</p><h1>从东方时间观，<br />设计当代日常。</h1><p className="hero-description">我是曹佳航。关注文化、形态与人的关系，<br className="desktop-break" />让工业设计在日常里，有温度地发生。</p><div className="hero-actions"><a className="button button-gold" href={withBasePath('/projects/walltime/')}>探索壁时 <Arrow /></a><a className="text-link" href="#works">全部作品 <span aria-hidden="true">↓</span></a></div><p className="hero-footnote">PRODUCT DESIGN <span>·</span> CMF <span>·</span> INTERACTION</p></div>
+      <div className="hero-copy"><p className="eyebrow"><span className="fine-line" /> 东方器物研究室</p><h1>从东方时间观，<br />设计当代日常。</h1><p className="hero-description">我是曹佳航。以产品设计连接文化与日常，<br className="desktop-break" />探索形态、材质与人的关系。</p><div className="hero-actions"><a className="button button-gold" href={withBasePath('/projects/walltime/')}>探索壁时 <Arrow /></a><a className="text-link" href="#works">全部作品 <span aria-hidden="true">↓</span></a></div><p className="hero-footnote">PRODUCT DESIGN <span>·</span> CMF <span>·</span> INTERACTION</p></div>
       <figure className="hero-product"><MotionStage><div className="product-stage"><img src={withBasePath(clock.cover.src)} alt={clock.cover.alt} width={1400} height={1050} fetchPriority="high"/></div></MotionStage><figcaption><span>壁时 <i>WALLTIME</i></span><span>二十四节气 · 一件桌面器物</span></figcaption></figure>
     </div><div className="hero-baseline shell"><span>SELECTED WORKS · 2025—2026</span><a href="#works">探索作品 <span aria-hidden="true">↓</span></a></div></section>
 

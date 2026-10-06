@@ -8,6 +8,14 @@ function GalleryImage({src,alt,width,height,className='',lazy=true}) {
   if(failed) return <div className={`media-fallback ${className}`} role="img" aria-label={alt}><span>{alt}</span><p>图片暂时无法加载</p></div>;
   return <img className={className} src={withBasePath(src)} alt={alt} width={width} height={height} loading={lazy?'lazy':'eager'} onError={()=>setFailed(true)}/>;
 }
+function OriginalImage({item}){
+  const [phase,setPhase]=useState('loading');
+  const alt=`${item.alt}，原图`;
+  return <div className="lightbox-stage" aria-busy={phase==='loading'}>
+    {phase==='loading'&&<><img className="lightbox-preview" src={withBasePath(item.src)} alt="" aria-hidden="true"/><span className="lightbox-loading" role="status">正在加载原图…</span></>}
+    {phase==='failed'?<div className="media-fallback lightbox-image" role="img" aria-label={alt}><span>{item.alt}</span><p>图片暂时无法加载</p></div>:<img className={`lightbox-image ${phase==='loading'?'is-loading':''}`} src={withBasePath(item.originalSrc)} alt={alt} width={item.width} height={item.height} onLoad={()=>setPhase('ready')} onError={()=>setPhase('failed')}/>}
+  </div>;
+}
 export default function MediaGallery({items}) {
   const [index,setIndex]=useState(null);
   const dialogRef=useRef(null),closeRef=useRef(null),openerRef=useRef(null);
@@ -47,7 +55,7 @@ export default function MediaGallery({items}) {
       <h2 id={titleId} className="visually-hidden">作品图片画廊</h2>
       {current&&<div className="lightbox-panel">
         <div className="lightbox-top"><span>作品原图 <span className="lightbox-count">{index+1} / {items.length}</span></span><button ref={closeRef} className="icon-button" onClick={close} aria-label="关闭画廊">×</button></div>
-        <div className="lightbox-stage"><GalleryImage src={current.originalSrc} alt={`${current.alt}，原图`} width={current.width} height={current.height} className="lightbox-image" lazy={false}/></div>
+        <OriginalImage item={current} key={current.originalSrc}/>
         <div className="lightbox-bottom"><button className="icon-button" onClick={()=>move(-1)} disabled={items.length<2} aria-label="上一张">←</button><div aria-live="polite"><p>{current.alt}</p><span>{current.caption}</span></div><button className="icon-button" onClick={()=>move(1)} disabled={items.length<2} aria-label="下一张">→</button></div>
         <a className="lightbox-original" href={withBasePath(current.originalSrc)} target="_blank" rel="noopener noreferrer">在新页面查看原图 ↗</a>
       </div>}
