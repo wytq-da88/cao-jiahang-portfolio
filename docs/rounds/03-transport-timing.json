@@ -1,0 +1,56 @@
+{
+  "environment": "Windows local loopback static server; no throttling or server compression",
+  "date": "2026-10-06",
+  "samples": [
+    {
+      "body_bytes": 37864,
+      "total_seconds": 0.003573,
+      "status": 200,
+      "ttfb_seconds": 0.002667,
+      "resource": "/",
+      "sample": 1
+    },
+    {
+      "body_bytes": 37864,
+      "total_seconds": 0.003019,
+      "status": 200,
+      "ttfb_seconds": 0.002201,
+      "resource": "/",
+      "sample": 2
+    },
+    {
+      "body_bytes": 37864,
+      "total_seconds": 0.003415,
+      "status": 200,
+      "ttfb_seconds": 0.002468,
+      "resource": "/",
+      "sample": 3
+    },
+    {
+      "body_bytes": 186679,
+      "total_seconds": 0.002829,
+      "status": 200,
+      "ttfb_seconds": 0.001796,
+      "resource": "/media/walltime-front.jpg",
+      "sample": 1
+    },
+    {
+      "body_bytes": 186679,
+      "total_seconds": 0.004262,
+      "status": 200,
+      "ttfb_seconds": 0.002569,
+      "resource": "/media/walltime-front.jpg",
+      "sample": 2
+    },
+    {
+      "body_bytes": 186679,
+      "total_seconds": 0.0035,
+      "status": 200,
+      "ttfb_seconds": 0.002237,
+      "resource": "/media/walltime-front.jpg",
+      "sample": 3
+    }
+  ],
+  "limits": "Transport timing only; not Lighthouse, LCP, FPS, device or public network loading time",
+  "tool": "curl 8.21.0 (Windows) libcurl/8.21.0 Schannel zlib/1.3.2 WinIDN WinLDAP"
+}

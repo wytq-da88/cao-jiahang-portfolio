@@ -1,0 +1,18 @@
+{
+  "environment": {
+    "height": 900,
+    "url": "http://127.0.0.1:4173/",
+    "width": 1440
+  },
+  "hero": {
+    "complete": true,
+    "priority": "high",
+    "src": "/media/walltime-front.jpg",
+    "width": 1400
+  },
+  "navigation": null,
+  "originalImages": 0,
+  "overflow": false,
+  "performanceAPI": false,
+  "videoCount": 0
+}

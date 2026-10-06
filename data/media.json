@@ -1,0 +1,178 @@
+{
+  "walltimeFront": {
+    "src": "/media/walltime-front.jpg",
+    "originalSrc": "/media/originals/walltime-front.png",
+    "alt": "壁时正面概念渲染",
+    "caption": "概念效果图，界面信息为视觉示意。",
+    "width": 1400,
+    "height": 1050
+  },
+  "walltimeDetail": {
+    "src": "/media/walltime-detail.jpg",
+    "originalSrc": "/media/originals/walltime-detail.png",
+    "alt": "壁时中央显示与外环细节",
+    "caption": "概念细节渲染；图中的日期和界面字段为视觉示意。",
+    "width": 1400,
+    "height": 1050
+  },
+  "walltimeProcess": {
+    "src": "/media/walltime-process.webp",
+    "originalSrc": "/media/originals/walltime-process.jpg",
+    "alt": "壁时从玉璧到桌面器物的造型推导",
+    "caption": "造型推导与比例探索。",
+    "width": 1600,
+    "height": 1100
+  },
+  "walltimeConcept": {
+    "src": "/media/walltime-concept.jpg",
+    "originalSrc": "/media/originals/walltime-concept.jpg",
+    "alt": "壁时东方桌面概念画面",
+    "caption": "东方器物与桌面场景的概念表达。",
+    "width": 1024,
+    "height": 1536
+  },
+  "walltimeScene": {
+    "src": "/media/walltime-scene.jpg",
+    "originalSrc": "/media/originals/walltime-scene.jpg",
+    "alt": "壁时置于东方桌面空间的场景渲染",
+    "caption": "桌面场景概念效果。",
+    "width": 800,
+    "height": 451
+  },
+  "walltimeFeatures": {
+    "src": "/media/walltime-features.webp",
+    "originalSrc": "/media/originals/walltime-features.png",
+    "alt": "壁时功能细节与产品系统设计展板",
+    "caption": "产品功能、部件与界面的设计提案。",
+    "width": 1536,
+    "height": 1024
+  },
+  "walltimeApp": {
+    "src": "/media/walltime-app.jpg",
+    "originalSrc": "/media/originals/walltime-app.png",
+    "alt": "壁时手机应用界面设计",
+    "caption": "场景灯光、节气与日程的应用界面概念。",
+    "width": 1065,
+    "height": 799
+  },
+  "walltimeExploded": {
+    "src": "/media/walltime-exploded.webp",
+    "originalSrc": "/media/originals/walltime-exploded.png",
+    "alt": "壁时产品部件分解示意",
+    "caption": "外环、显示模组与底座的结构概念；非实物装配验证。",
+    "width": 235,
+    "height": 347
+  },
+  "walltimeSystem": {
+    "src": "/media/walltime-system.jpg",
+    "originalSrc": "/media/originals/walltime-system.jpg",
+    "alt": "壁时系统与功能组织",
+    "caption": "系统功能的概念示意。",
+    "width": 1024,
+    "height": 1536
+  },
+  "walltimeScenario": {
+    "src": "/media/walltime-scenario.jpg",
+    "originalSrc": "/media/originals/walltime-scenario.jpg",
+    "alt": "壁时使用场景设计",
+    "caption": "专注、休息与桌面陪伴的场景概念。",
+    "width": 1024,
+    "height": 1536
+  },
+  "walltimeFinal": {
+    "src": "/media/walltime-final.jpg",
+    "originalSrc": "/media/originals/walltime-final.png",
+    "alt": "壁时最终设计展板",
+    "caption": "最终概念展板；界面信息为视觉示意。",
+    "width": 1083,
+    "height": 1453
+  },
+  "coolingFan": {
+    "src": "/media/cooling-fan.webp",
+    "originalSrc": "/media/originals/cooling-fan.jpg",
+    "alt": "手机散热风扇整体渲染",
+    "caption": "移动游戏场景下的产品造型提案。",
+    "width": 1600,
+    "height": 800
+  },
+  "coolingFanDetail": {
+    "src": "/media/cooling-fan-detail.webp",
+    "originalSrc": "/media/originals/cooling-fan-detail.jpg",
+    "alt": "手机散热风扇控制与结构细节",
+    "caption": "夹持、控制与红黑 CMF 的细节渲染。",
+    "width": 1600,
+    "height": 800
+  },
+  "pillBox": {
+    "src": "/media/pill-box.webp",
+    "originalSrc": "/media/originals/pill-box.jpg",
+    "alt": "磁吸药盒完整设计展板",
+    "caption": "磁吸开合、独立药仓、侧边释放与使用流程的概念展板。",
+    "width": 1600,
+    "height": 2263
+  },
+  "fulingBrand": {
+    "src": "/media/fuling-brand.jpg",
+    "originalSrc": "/media/originals/fuling-brand.png",
+    "alt": "涪陵榨菜品牌与包装系列展板",
+    "caption": "地域视觉资产、色彩与系列包装的设计提案。",
+    "width": 1054,
+    "height": 1492
+  },
+  "fulingProduction": {
+    "src": "/media/fuling-production.jpg",
+    "originalSrc": "/media/originals/fuling-production.png",
+    "alt": "涪陵榨菜包装结构与应用展板",
+    "caption": "包装结构、陈列与衍生应用的概念展板。",
+    "width": 1054,
+    "height": 1492
+  },
+  "mouse": {
+    "src": "/media/mouse.webp",
+    "originalSrc": "/media/originals/mouse.jpg",
+    "alt": "无线鼠标右前方建模渲染",
+    "caption": "连续上壳曲面与分件表达。",
+    "width": 1600,
+    "height": 900
+  },
+  "mouseLeft": {
+    "src": "/media/mouse-left.webp",
+    "originalSrc": "/media/originals/mouse-left.jpg",
+    "alt": "无线鼠标左前方建模渲染",
+    "caption": "办公鼠标的造型探索。",
+    "width": 1600,
+    "height": 900
+  },
+  "mouseBottom": {
+    "src": "/media/mouse-bottom.webp",
+    "originalSrc": "/media/originals/mouse-bottom.jpg",
+    "alt": "无线鼠标底部结构渲染",
+    "caption": "脚垫与底部结构布局。",
+    "width": 1600,
+    "height": 900
+  },
+  "gameController": {
+    "src": "/media/game-controller.jpg",
+    "originalSrc": "/media/originals/game-controller.jpg",
+    "alt": "游戏手柄建模与渲染",
+    "caption": "消费电子造型练习。",
+    "width": 1600,
+    "height": 1440
+  },
+  "earbuds": {
+    "src": "/media/earbuds.jpg",
+    "originalSrc": "/media/originals/earbuds.jpg",
+    "alt": "无线蓝牙耳机开盖渲染",
+    "caption": "小型数码 CMF 与材质表达。",
+    "width": 1400,
+    "height": 1184
+  },
+  "juicer": {
+    "src": "/media/juicer.webp",
+    "originalSrc": "/media/originals/juicer.jpg",
+    "alt": "便携式果汁机整体渲染",
+    "caption": "透明材质与产品结构练习。",
+    "width": 1600,
+    "height": 999
+  }
+}
