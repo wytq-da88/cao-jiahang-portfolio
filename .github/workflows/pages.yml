@@ -22,7 +22,7 @@ jobs:
       pages: read
     env:
       NEXT_TELEMETRY_DISABLED: '1'
-      npm_config_cache: ${{ runner.temp }}/npm-cache
+      npm_config_cache: ${{ github.workspace }}/.npm-cache
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -69,4 +69,3 @@ jobs:
       - name: Publish the validated artifact
         id: deployment
         uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
-
