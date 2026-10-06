@@ -21,6 +21,9 @@
 
 ## Deferred minors
 
+收尾新增裁决：
+- Final: Ruling: Archive this plan scratch reversibly rather than recursively deleting it — automatic review rejected the recursive delete with blocked by policy and no specific reason; preserve all logs while removing the active scratch location — cost if wrong: archived logs occupy additional D-drive space.
+
 - Final: minor (deferred): Desktop-eligible Lenis lifecycle is not covered by the OS preference unit test; manual cleanup/restoration is verified and production cleanup appears correct. Add creation, OS reduce destruction/restoration and unmount coverage in a follow-up.
 
 发布实测修正：完整工作流的缓存上下文检查 RED→GREEN，行为测试29/29；失败运行与修正依据保留在workflow-validation.md。独立审查不替代正式部署和线上验收。
