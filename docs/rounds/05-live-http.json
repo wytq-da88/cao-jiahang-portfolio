@@ -1,0 +1,139 @@
+{
+  "checked": "2026-10-06T19:54:39.5375544+08:00",
+  "sourceCommit": "0f25470225513c15dae4afe5e83b80bc147c5fcf",
+  "run": "https://github.com/wytq-da88/cao-jiahang-portfolio/actions/runs/37459029041",
+  "checks": [
+    {
+      "url": "https://wytq-da88.github.io/cao-jiahang-portfolio/",
+      "method": "GET",
+      "status": 200,
+      "expected": 200,
+      "contentType": "text/html; charset=utf-8",
+      "length": "",
+      "title": "曹佳航 · 东方器物研究室",
+      "canonical": "https://wytq-da88.github.io/cao-jiahang-portfolio/",
+      "custom404": null
+    },
+    {
+      "url": "https://wytq-da88.github.io/cao-jiahang-portfolio/projects/walltime/",
+      "method": "GET",
+      "status": 200,
+      "expected": 200,
+      "contentType": "text/html; charset=utf-8",
+      "length": "",
+      "title": "壁时 · 曹佳航作品集",
+      "canonical": "https://wytq-da88.github.io/cao-jiahang-portfolio/projects/walltime/",
+      "custom404": null
+    },
+    {
+      "url": "https://wytq-da88.github.io/cao-jiahang-portfolio/projects/cooling-fan/",
+      "method": "GET",
+      "status": 200,
+      "expected": 200,
+      "contentType": "text/html; charset=utf-8",
+      "length": "",
+      "title": "手机散热风扇 · 曹佳航作品集",
+      "canonical": "https://wytq-da88.github.io/cao-jiahang-portfolio/projects/cooling-fan/",
+      "custom404": null
+    },
+    {
+      "url": "https://wytq-da88.github.io/cao-jiahang-portfolio/projects/pill-box/",
+      "method": "GET",
+      "status": 200,
+      "expected": 200,
+      "contentType": "text/html; charset=utf-8",
+      "length": "",
+      "title": "智能药盒 · 曹佳航作品集",
+      "canonical": "https://wytq-da88.github.io/cao-jiahang-portfolio/projects/pill-box/",
+      "custom404": null
+    },
+    {
+      "url": "https://wytq-da88.github.io/cao-jiahang-portfolio/projects/fuling-packaging/",
+      "method": "GET",
+      "status": 200,
+      "expected": 200,
+      "contentType": "text/html; charset=utf-8",
+      "length": "",
+      "title": "涪陵榨菜 · 曹佳航作品集",
+      "canonical": "https://wytq-da88.github.io/cao-jiahang-portfolio/projects/fuling-packaging/",
+      "custom404": null
+    },
+    {
+      "url": "https://wytq-da88.github.io/cao-jiahang-portfolio/projects/unknown-project/",
+      "method": "GET",
+      "status": 404,
+      "expected": 404,
+      "contentType": "text/html; charset=utf-8",
+      "length": "",
+      "title": "曹佳航 · 东方器物研究室",
+      "canonical": "https://wytq-da88.github.io/cao-jiahang-portfolio/",
+      "custom404": true
+    },
+    {
+      "url": "https://wytq-da88.github.io/cao-jiahang-portfolio/media/walltime-front.jpg",
+      "method": "HEAD",
+      "status": 200,
+      "expected": 200,
+      "contentType": "image/jpeg",
+      "length": "186679",
+      "title": null,
+      "canonical": null,
+      "custom404": null
+    },
+    {
+      "url": "https://wytq-da88.github.io/cao-jiahang-portfolio/media/walltime-process.webp",
+      "method": "HEAD",
+      "status": 200,
+      "expected": 200,
+      "contentType": "image/webp",
+      "length": "116248",
+      "title": null,
+      "canonical": null,
+      "custom404": null
+    },
+    {
+      "url": "https://wytq-da88.github.io/cao-jiahang-portfolio/media/originals/walltime-process.jpg",
+      "method": "HEAD",
+      "status": 200,
+      "expected": 200,
+      "contentType": "image/jpeg",
+      "length": "196979",
+      "title": null,
+      "canonical": null,
+      "custom404": null
+    },
+    {
+      "url": "https://wytq-da88.github.io/cao-jiahang-portfolio/media/originals/walltime-front.png",
+      "method": "HEAD",
+      "status": 200,
+      "expected": 200,
+      "contentType": "image/png",
+      "length": "2127950",
+      "title": null,
+      "canonical": null,
+      "custom404": null
+    },
+    {
+      "url": "https://wytq-da88.github.io/cao-jiahang-portfolio/media/walltime-concept.mp4",
+      "method": "HEAD",
+      "status": 200,
+      "expected": 200,
+      "contentType": "video/mp4",
+      "length": "5113074",
+      "title": null,
+      "canonical": null,
+      "custom404": null
+    },
+    {
+      "url": "https://wytq-da88.github.io/cao-jiahang-portfolio/downloads/resume-cao-jiahang.pdf",
+      "method": "HEAD",
+      "status": 200,
+      "expected": 200,
+      "contentType": "application/pdf",
+      "length": "151690",
+      "title": null,
+      "canonical": null,
+      "custom404": null
+    }
+  ]
+}

@@ -2,6 +2,8 @@
 
 以「壁时」为主角的个人工业设计作品集。四个独立案例与消费电子练习，使用作者原有渲染、展板与简历。新项目独立于 [原作品集](https://wytq-da88.github.io/)。
 
+[查看新版作品集](https://wytq-da88.github.io/cao-jiahang-portfolio/) · [三轮优化与线上验收](docs/rounds/05-live.md)
+
 ## 开发
 
 Node 22。依赖版本固定于 package-lock.json。
@@ -34,6 +36,8 @@ npm run preview
 ## 发布
 
 独立仓库为 `wytq-da88/cao-jiahang-portfolio`，Pages 地址为 `https://wytq-da88.github.io/cao-jiahang-portfolio/`。该地址在工作流成功与线上验收后才视为发布完成，原站仍由原仓库维护。
+
+2026-10-06 已完成首次成功部署与线上验收，具体源码提交、Actions run、原站保护和真实截图见发布记录。
 
 PR 运行测试、根路径及子路径构建与导出检查；仅 main 可上传通过检查的 `out/` 并部署。官方 GitHub Actions 固定到经核验的提交，记录在 `docs/action-sources.json`。Pages 使用 GitHub Actions 来源，发布流程参考 [GitHub 官方文档](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)。
 
