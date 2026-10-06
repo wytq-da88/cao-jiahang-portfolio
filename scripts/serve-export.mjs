@@ -5,7 +5,7 @@ import { resolve, extname, sep } from 'node:path';
 const root = resolve('out');
 const base = (process.env.NEXT_PUBLIC_BASE_PATH || '').replace(/\/$/, '');
 const port = Number(process.env.PORT || 4173);
-const mime = {'.html':'text/html; charset=utf-8','.js':'text/javascript','.css':'text/css','.jpg':'image/jpeg','.png':'image/png','.webp':'image/webp','.svg':'image/svg+xml','.mp4':'video/mp4','.pdf':'application/pdf','.txt':'text/plain','.json':'application/json'};
+const mime = {'.html':'text/html; charset=utf-8','.js':'text/javascript','.css':'text/css','.jpg':'image/jpeg','.png':'image/png','.webp':'image/webp','.svg':'image/svg+xml','.mp4':'video/mp4','.pdf':'application/pdf','.woff2':'font/woff2','.txt':'text/plain','.json':'application/json'};
 async function notFound(res) {
   res.writeHead(404, {'Content-Type':mime['.html']});
   res.end(await readFile(resolve(root, '404.html')).catch(()=>'404 — 页面不存在'));

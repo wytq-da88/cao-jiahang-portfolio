@@ -1,7 +1,11 @@
 import './globals.css';
+import 'lenis/dist/lenis.css';
 import SiteHeader from '../components/SiteHeader.jsx';
 import SiteFooter from '../components/SiteFooter.jsx';
 import { absoluteUrl } from '../lib/site-path.js';
+import localFont from 'next/font/local';
+import { MotionProvider } from '../components/MotionProvider.jsx';
+const headingFont=localFont({src:'../public/fonts/noto-serif-sc-500.woff2',weight:'500',display:'swap',variable:'--portfolio-serif',adjustFontFallback:false});
 export const metadata = {
   metadataBase: new URL('https://wytq-da88.github.io'),
   title: {default:'曹佳航 · 东方器物研究室',template:'%s · 曹佳航作品集'},
@@ -12,5 +16,5 @@ export const metadata = {
 };
 export const viewport = { width:'device-width', initialScale:1, themeColor:'#101210' };
 export default function RootLayout({children}) {
-  return <html lang="zh-CN"><body id="top"><a className="skip-link" href="#main-content">跳到主要内容</a><SiteHeader />{children}<SiteFooter /></body></html>;
+  return <html lang="zh-CN" className={headingFont.variable}><body id="top" tabIndex={-1}><a className="skip-link" href="#main-content">跳到主要内容</a><MotionProvider><SiteHeader />{children}<SiteFooter /></MotionProvider></body></html>;
 }
