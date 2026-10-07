@@ -2,8 +2,8 @@
   "source": "https://github.com/google/fonts/tree/main/ofl/notoserifsc",
   "license": "SIL Open Font License 1.1",
   "source_sha256": "050080d9255a86808f2945bffac582b31ef32bc36411ce29563b4961670c66f9",
-  "glyph_characters": 624,
+  "glyph_characters": 632,
   "weight": 500,
-  "output_bytes": 105872,
-  "output_sha256": "1637e65ba88d464b96f27ef9e0dad86f09b7d482d8861e4c67336227d5e2f7d1"
+  "output_bytes": 106920,
+  "output_sha256": "39de75ed0f441a54ed46904a1dcdff5792a3d0a29b0188e09e58ce8fc1b843e5"
 }
