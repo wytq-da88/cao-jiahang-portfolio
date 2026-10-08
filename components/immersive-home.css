@@ -1,0 +1,44 @@
+.immersive-home { background:#080a0e; color:#f1f4f8; }
+.immersive-home :focus-visible { outline-color:#a6d5ff; }
+.immersive-home h2,.immersive-home h3 { font-family:var(--sans); }
+.design-intro { position:relative; padding-block:148px; display:grid; grid-template-columns:1fr 2fr; gap:50px; }
+.design-intro>.eyebrow { padding-top:11px; color:#9baabc; font-size:9px; letter-spacing:.1em; }
+.design-intro h2 { font-size:clamp(30px,3.35vw,52px); font-weight:550; line-height:1.48; letter-spacing:-.04em; }
+.design-intro h2 span { color:#a4b4c8; }
+.design-intro>div>p { color:#95a2b4; font-size:14px; line-height:2; margin:26px 0; }
+.design-intro .text-link { color:#b2d8ff; font-size:12px; }
+.intro-orbit { position:absolute; bottom:105px; left:0; color:#a6d5ff; font-size:86px; line-height:1; }
+.immersive-home .archive-section { background:#e9eef3; color:#18202c; padding-block:124px; border:0; }
+.immersive-home .archive-section .eyebrow { color:#506882; }
+.immersive-home .section-intro h2,.immersive-home .about-section h2 { font-size:clamp(32px,4.1vw,58px); font-weight:550; line-height:1.25; letter-spacing:-.055em; }
+.immersive-home .archive-grid { gap:62px 40px; }
+.immersive-home .archive-image { background:#f5f7fa; padding:44px; }
+.immersive-home .archive-image img { transition:transform 700ms cubic-bezier(.16,1,.3,1); }
+.immersive-home .archive-caption { border-color:#1b293322; }
+.immersive-home .archive-caption h3 { font-size:19px; font-weight:550; }
+.immersive-home .archive-caption>span { color:#626e7f; }
+.immersive-home .about-section { padding-block:132px; }
+.immersive-home .about-section .eyebrow { color:#8ea1b8; }
+.immersive-home .about-copy { color:#a3b0c1; font-size:15px; line-height:2; }
+.immersive-home .about-copy .text-link { color:#b2d8ff; }
+.immersive-home .about-signature { font-family:var(--sans); font-size:22px; }
+.immersive-home .about-signature span { color:#8ea1b8; }
+.immersive-home .capability-list span { color:#d3deeb; border-color:#bcd9ff33; border-radius:999px; font-size:11px; }
+@media(hover:hover) and (pointer:fine) { .immersive-home .archive-image:hover img { transform:scale(1.06); } }
+@media(max-width:959px) {
+  .design-intro { padding-block:96px; grid-template-columns:1fr; gap:30px; }
+  .intro-orbit { top:76px; bottom:auto; left:auto; right:0; font-size:48px; }
+  .immersive-home .archive-section,.immersive-home .about-section { padding-block:88px; }
+  .immersive-home .archive-grid { gap:38px 24px; }
+}
+@media(max-width:599px) {
+  .design-intro { padding-block:78px; gap:32px; }
+  .design-intro h2 { font-size:28px; line-height:1.5; }
+  .design-intro>div>p { font-size:13px; }
+  .intro-orbit { top:76px; font-size:34px; }
+  .immersive-home .archive-section,.immersive-home .about-section { padding-block:72px; }
+  .immersive-home .archive-image { padding:28px; }
+  .immersive-home .about-copy { font-size:14px; }
+}
+@media(prefers-reduced-motion:reduce) { .immersive-home .archive-image img { transition:none; transform:none!important; } }
+html[data-reduced-motion=true] .immersive-home .archive-image img { transition:none; transform:none!important; }

@@ -1,0 +1,137 @@
+.season-experience {
+  --season-accent: #baf2d8;
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  height: clamp(680px, 86svh, 900px);
+  overflow: hidden;
+  background: #070b10;
+  color: #f3f6f7;
+  border-block: 1px solid #ffffff1c;
+  font-family: var(--sans);
+}
+.season-stage, .season-art, .season-shade { position: absolute; inset: 0; width: 100%; height: 100%; }
+.season-stage { z-index: -2; overflow: hidden; }
+.season-art { max-width: none; object-fit: cover; object-position: 64% center; }
+.season-art-previous { z-index: 0; }
+.season-art-current { z-index: 1; }
+.season-art-enter { animation: season-arrive 900ms cubic-bezier(.16, 1, .3, 1) both; }
+.season-preload { display: none; }
+.season-shade {
+  z-index: 2;
+  background: linear-gradient(90deg, #070b10ed 0%, #070b1094 29%, #070b1008 65%), linear-gradient(0deg, #070b10 0%, #070b10d9 12%, transparent 42%, #070b1033 76%, #070b1066 100%);
+  pointer-events: none;
+}
+.season-topline, .season-bottomline { position: absolute; left: 5.3%; right: 5.3%; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.season-topline { top: 32px; font-size: 10px; font-weight: 500; letter-spacing: .13em; color: #d0d5df; }
+.season-topline > span:first-child { display: inline-flex; align-items: center; gap: 12px; }
+.season-topline i { display: block; width: 5px; height: 5px; background: var(--season-accent); box-shadow: 0 0 16px var(--season-accent); border-radius: 50%; }
+.season-ai-label { border: 1px solid #ffffff36; border-radius: 100px; padding: 5px 11px; font-size: 10px; letter-spacing: .06em; background: #0a101755; }
+.season-intro { position: absolute; left: 5.3%; top: 100px; }
+.season-overline { color: #c1c7d0; font-size: 12px; letter-spacing: .08em; }
+.season-intro h2 { margin-top: 16px; font-family: var(--sans); font-weight: 550; font-size: clamp(36px, 3.8vw, 59px); line-height: 1.2; letter-spacing: -.065em; }
+.season-caption { position: absolute; left: 5.3%; bottom: 205px; animation: season-caption-in 650ms cubic-bezier(.16, 1, .3, 1) both; }
+.season-scene-index { display: flex; gap: 12px; align-items: baseline; color: #b8c2ce; font-size: 10px; letter-spacing: .18em; }
+.season-scene-index > span { color: var(--season-accent); }
+.season-caption h3 { margin: 9px 0 13px; font: 500 clamp(72px, 7.5vw, 118px)/1.1 var(--sans); letter-spacing: -.09em; color: var(--season-accent); }
+.season-scene-note { color: #d2d8e0; font-size: 13px; line-height: 1.8; letter-spacing: .02em; }
+.season-coordinate { position: absolute; top: 48%; right: 3%; display: flex; align-items: center; gap: 15px; writing-mode: vertical-rl; font-size: 8px; letter-spacing: .15em; color: #cbd5e1; }
+.season-coordinate i { display: block; width: 1px; height: 36px; background: #ffffff42; }
+.season-interaction { position: absolute; bottom: 73px; left: 5.3%; right: 5.3%; display: grid; grid-template-columns: minmax(0, 1.22fr) minmax(260px, .7fr); gap: 8%; align-items: end; }
+.season-selector { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 5px; }
+.season-selector button { position: relative; display: grid; grid-template-columns: 1fr auto; gap: 3px 8px; min-height: 83px; padding: 12px 12px 10px; color: #aeb7c4; background: #ffffff04; border: 0; border-top: 1px solid #ffffff30; text-align: left; transition: background 180ms ease, color 180ms ease, border-color 180ms ease; }
+.season-button-number { font-size: 8px; letter-spacing: .06em; opacity: .85; }
+.season-button-label { grid-row: 1 / 3; grid-column: 2; align-self: center; font-size: 28px; line-height: 1; }
+.season-button-english { align-self: end; font-size: 8px; letter-spacing: .12em; }
+.season-button-dot { position: absolute; width: 4px; height: 4px; border-radius: 50%; right: 12px; top: 9px; background: currentColor; opacity: 0; transition: opacity 180ms ease; }
+.season-selector button[aria-pressed=true] { color: var(--season-accent); border-top-color: var(--season-accent); background: #ffffff0a; }
+.season-selector button[aria-pressed=true] .season-button-dot { opacity: 1; }
+.season-selector button:hover { color: #f5f8ff; background: #ffffff12; }
+.season-selector button:active { background: #ffffff1a; }
+.season-selector button.is-pending .season-button-dot { animation: season-wait 1s ease-in-out infinite alternate; }
+.season-experience :focus-visible { outline: 2px solid var(--season-accent); outline-offset: 5px; }
+.season-timeline { padding: 0 2px 2px; }
+.season-timeline-label { display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 11px; color: #d3d9e4; }
+.season-timeline-label > span { font-size: 10px; font-variant-numeric: tabular-nums; letter-spacing: .04em; color: var(--season-accent); }
+.season-timeline-label i { font-style: normal; color: #788291; }
+.season-timeline input { display: block; appearance: none; -webkit-appearance: none; width: 100%; height: 30px; margin: 3px 0 0; padding: 0; background: transparent; cursor: ew-resize; touch-action: pan-y; }
+.season-timeline input::-webkit-slider-runnable-track { height: 2px; border-radius: 2px; background: linear-gradient(to right, var(--season-accent) 0% var(--season-progress), #ffffff35 var(--season-progress) 100%); }
+.season-timeline input::-webkit-slider-thumb { appearance: none; -webkit-appearance: none; width: 12px; height: 12px; margin-top: -5px; border: 2px solid #070b10; border-radius: 50%; background: var(--season-accent); box-shadow: 0 0 0 1px var(--season-accent); }
+.season-timeline input::-moz-range-track { height: 2px; border-radius: 2px; background: #ffffff35; }
+.season-timeline input::-moz-range-progress { height: 2px; background: var(--season-accent); }
+.season-timeline input::-moz-range-thumb { width: 10px; height: 10px; border: 2px solid #070b10; border-radius: 50%; background: var(--season-accent); box-shadow: 0 0 0 1px var(--season-accent); }
+.season-timeline-marks { display: flex; justify-content: space-between; font-size: 9px; color: #8c98a9; padding-top: 1px; }
+.season-bottomline { bottom: 21px; min-height: 27px; font-size: 9px; line-height: 1.5; color: #a9b3c0; }
+.season-bottomline p { margin: 0; }
+.season-disclosure { margin-left: auto; white-space: nowrap; }
+.season-retry { display: inline-flex; align-items: center; gap: 12px; min-height: 36px; padding: 5px 12px; border: 1px solid #ffffff36; border-radius: 3px; background: #0b1520; color: var(--season-accent); font-size: 11px; white-space: nowrap; }
+@keyframes season-arrive { from { opacity: 0; transform: scale(1.045); filter: blur(3px); } to { opacity: 1; transform: scale(1); filter: blur(0); } }
+@keyframes season-caption-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes season-wait { from { opacity: .25; } to { opacity: 1; } }
+
+@media (min-width: 1600px) {
+  .season-caption { bottom: 190px; }
+  .season-interaction { gap: 16%; }
+}
+@media (max-width: 959px) {
+  .season-experience { height: 760px; min-height: 760px; }
+  .season-intro { top: 90px; }
+  .season-intro h2 { font-size: 43px; }
+  .season-caption { bottom: 245px; }
+  .season-caption h3 { font-size: 76px; }
+  .season-interaction { grid-template-columns: minmax(0, 1fr) minmax(200px, .8fr); gap: 5%; }
+  .season-selector button { padding-inline: 9px; }
+  .season-button-label { font-size: 24px; }
+  .season-button-english { font-size: 7px; letter-spacing: .06em; }
+}
+@media (max-width: 599px) {
+  .season-experience { height: 780px; min-height: 780px; }
+  .season-topline, .season-bottomline, .season-interaction { left: 22px; right: 22px; }
+  .season-topline { top: 23px; gap: 10px; font-size: 7px; letter-spacing: .1em; }
+  .season-topline > span:first-child { gap: 7px; }
+  .season-ai-label { padding: 4px 8px; font-size: 8px; }
+  .season-stage { top: 166px; bottom: 270px; height: auto; }
+  .season-art { object-position: 68% center; }
+  .season-shade { background: linear-gradient(0deg, #070b10 0%, #070b1044 18%, transparent 43%, #070b1022 76%, #070b10 100%), linear-gradient(90deg, #070b1033, transparent 30%); }
+  .season-intro { top: 74px; left: 22px; }
+  .season-overline { font-size: 10px; }
+  .season-intro h2 { margin-top: 11px; font-size: 35px; letter-spacing: -.05em; line-height: 1.22; }
+  .season-intro h2 br { display: none; }
+  .season-caption { left: 22px; right: 22px; bottom: 224px; display: grid; grid-template-columns: 1fr auto; align-items: end; column-gap: 12px; }
+  .season-scene-index { grid-column: 1; gap: 8px; font-size: 8px; letter-spacing: .13em; }
+  .season-caption h3 { grid-column: 2; grid-row: 1 / 3; margin: 0; font-size: 51px; letter-spacing: -.1em; }
+  .season-scene-note { grid-column: 1; margin-top: 7px; font-size: 10px; line-height: 1.8; max-width: 20em; }
+  .season-coordinate { top: 204px; right: 16px; font-size: 7px; opacity: .65; }
+  .season-coordinate i { height: 25px; }
+  .season-interaction { bottom: 69px; grid-template-columns: 1fr; gap: 21px; }
+  .season-selector { gap: 5px; }
+  .season-selector button { min-height: 62px; padding: 9px 10px 8px; }
+  .season-button-label { font-size: 24px; }
+  .season-button-number { font-size: 7px; }
+  .season-button-english { font-size: 7px; letter-spacing: .03em; }
+  .season-button-dot { right: 9px; top: 7px; width: 3px; height: 3px; }
+  .season-timeline-label { font-size: 10px; }
+  .season-timeline input { margin-top: 2px; }
+  .season-timeline-marks { font-size: 8px; }
+  .season-bottomline { bottom: 17px; min-height: 35px; gap: 8px; align-items: flex-end; font-size: 8px; }
+  .season-bottomline p { max-width: 26em; }
+  .season-disclosure { max-width: 8em; white-space: normal; text-align: right; line-height: 1.7; }
+  .season-bottomline:has(.season-retry) .season-disclosure { display: none; }
+  .season-retry { font-size: 10px; min-height: 34px; }
+}
+@media (max-width: 359px) {
+  .season-topline, .season-bottomline, .season-interaction { left: 18px; right: 18px; }
+  .season-intro, .season-caption { left: 18px; }
+  .season-intro h2 { font-size: 31px; }
+  .season-caption h3 { font-size: 43px; }
+  .season-scene-note { max-width: 17em; }
+}
+.season-experience[data-reduced-motion=true] .season-art-enter,
+.season-experience[data-reduced-motion=true] .season-caption,
+.season-experience[data-reduced-motion=true] .season-selector button.is-pending .season-button-dot { animation: none; }
+.season-experience[data-reduced-motion=true] button { transition: none; }
+@media (prefers-reduced-motion: reduce) {
+  .season-art-enter, .season-caption, .season-selector button.is-pending .season-button-dot { animation: none; }
+  .season-selector button, .season-button-dot { transition: none; }
+  .season-art-previous { display: none; }
+}

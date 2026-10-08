@@ -1,0 +1,52 @@
+[
+  {
+    "name": "walltime-cinematic",
+    "src": "/media/generated/walltime-cinematic.webp",
+    "width": 1672,
+    "height": 941,
+    "bytes": 199180,
+    "sha256": "177287127369e4f90c5243f6995ea68266ea4f6e111f1900bddec528e5226fc3",
+    "sourceSha256": "8001c735297f159a0a910ff4197dd8c0ff0049fc159b79a20e597b412034f79a",
+    "type": "AI scene interpretation based on original WALLTIME design"
+  },
+  {
+    "name": "walltime-spring",
+    "src": "/media/generated/walltime-spring.webp",
+    "width": 1672,
+    "height": 941,
+    "bytes": 285570,
+    "sha256": "808e42c1eb43aa0fb4685d3893a48d6ae9437ac51dbbed067659acd95d95f369",
+    "sourceSha256": "dd879edc787bb1aa677716df2224c8e180d7a7eea1c1963bfdff48c3c88a5c51",
+    "type": "AI scene interpretation based on original WALLTIME design"
+  },
+  {
+    "name": "walltime-summer",
+    "src": "/media/generated/walltime-summer.webp",
+    "width": 1672,
+    "height": 941,
+    "bytes": 284818,
+    "sha256": "fb69c406b5dc7e5e4d7f7021e74d96edc8c665951fded329d69f7a15e5af111e",
+    "sourceSha256": "b37f5da826fece896a511f38f9d3dfe82cdd33a27aec3e673bf475cd994ed6ff",
+    "type": "AI scene interpretation based on original WALLTIME design"
+  },
+  {
+    "name": "walltime-autumn",
+    "src": "/media/generated/walltime-autumn.webp",
+    "width": 1672,
+    "height": 941,
+    "bytes": 261886,
+    "sha256": "1174f4c3eba460734ea20dc89ef039ee9fbeb9beb4ee703c8fd6c9d6c6ae6e79",
+    "sourceSha256": "69402c9338a70d99091a8a699ea87869d7923b4254e16d93615bcb2a87ac5e84",
+    "type": "AI scene interpretation based on original WALLTIME design"
+  },
+  {
+    "name": "walltime-winter",
+    "src": "/media/generated/walltime-winter.webp",
+    "width": 1672,
+    "height": 941,
+    "bytes": 258280,
+    "sha256": "df6ccce2416b0e9e3a0f92f4a1ac34854dfe2fb09f9a1c5ca818258d13006e9f",
+    "sourceSha256": "b991b77e408e730001843fdeac53624bf6b18ebc1de97307298ca8241564981a",
+    "type": "AI scene interpretation based on original WALLTIME design"
+  }
+]
