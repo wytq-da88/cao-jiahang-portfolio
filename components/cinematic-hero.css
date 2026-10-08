@@ -1,7 +1,10 @@
 .cinematic-hero { position: relative; background: #080a0e; color: #f5f7fa; }
-.cinematic-hero[data-animated=true] { height: 142svh; }
 .cinematic-sticky { position: relative; min-height: 700px; height: calc(100svh - 88px); max-height: 1100px; overflow: clip; isolation: isolate; }
-.cinematic-hero[data-animated=true] .cinematic-sticky { position: sticky; top: 88px; }
+/* Reserve the same space before hydration so incoming fragment links stay aligned. */
+@media (min-width:960px) and (pointer:fine) {
+  .cinematic-hero { height: 142svh; }
+  .cinematic-hero .cinematic-sticky { position: sticky; top: 88px; }
+}
 .cinematic-camera { position: absolute; inset: -12px; z-index: -3; }
 .cinematic-image { width: 100%; height: 100%; object-fit: cover; object-position: 62% center; transform-origin: 67% 51%; }
 .cinematic-shade { position: absolute; inset: 0; z-index: -2; background: linear-gradient(90deg,rgba(6,8,13,.72),rgba(6,8,13,.12) 51%,transparent 76%),linear-gradient(0deg,rgba(6,8,13,.93),transparent 28%,transparent 80%,rgba(6,8,13,.28)); }
@@ -61,5 +64,4 @@
   .cinematic-project .cinematic-description { max-width: 19em; }
   .cinematic-project .cinematic-camera { top: 265px; }
 }
-@media(prefers-reduced-motion:reduce) { .cinematic-hero[data-animated=true] { height: auto; } .cinematic-camera,.cinematic-image,.cinematic-copy { transform: none!important; } .cinematic-copy { opacity: 1!important; } }
-html[data-reduced-motion=true] .cinematic-hero { height: auto; }
+@media(prefers-reduced-motion:reduce) { .cinematic-camera,.cinematic-image,.cinematic-copy { transform: none!important; } .cinematic-copy { opacity: 1!important; } }

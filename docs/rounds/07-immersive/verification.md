@@ -18,6 +18,8 @@
 - 点击「阅读设计过程」进入 `project-brief`，标题位于粘性导航下方。回退键盘焦点至首屏 CTA 时父层透明度为1。
 - 「减少动态」打开后 `data-animated=false`，季节图 `animation-name:none`；结束恢复原来的系统设置。
 - 案例页实际浏览器错误/警告日志为空。没有宣称实体手机、Safari、读屏、帧率或 Lighthouse 全面测试。
+- 发布前跨页面跳转检查发现：首屏初始化后增加高度，导致首页 `#works` 落点偏移。已改为在 CSS 桌面断点预留一致高度，动画开关只改变视觉效果，不改变布局；减少动态仍停用缩放、位移与渐变。
+- 修复后实际从案例导航回首页，目录落点稳定在108.19px；动态开关两种状态的首屏高度均为1357.51px。
 
 截图保存于 `D:/workspace/.cache/portfolio-tools/immersive-assets-20261007/`：`home-desktop.png`、`home-mobile.png`、`seasons-mobile.png`、`seasons-desktop.png`。
 
