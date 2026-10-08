@@ -19,7 +19,7 @@ export default function SiteHeader() {
     query?.addEventListener('change',resize);return ()=>query?.removeEventListener('change',resize);
   },[]);
   return <header ref={headerRef} className={`site-header ${enhanced?'is-enhanced':''}`} data-open={open} onBlur={event=>{if(open&&event.relatedTarget&&!event.currentTarget.contains(event.relatedTarget))close(false);}}><div className="header-inner shell">
-    <a className="identity" href={withBasePath('/')} aria-label="曹佳航 · 返回首页"><span className="identity-seal" aria-hidden="true">航</span><span>曹佳航<small>INDUSTRIAL DESIGN</small></span></a>
+    <a className="identity" href={withBasePath('/')} aria-label="曹佳航 · 返回首页"><span className="identity-mark" aria-hidden="true">CJ<span>✳</span></span><span>曹佳航<small>INDUSTRIAL DESIGN</small></span></a>
     <button ref={triggerRef} className="menu-toggle" aria-expanded={open} aria-controls={navId} aria-label={open?'关闭菜单':'打开菜单'} onClick={()=>open?close():setOpen(true)}><span>{open?'关闭':'目录'}</span><i aria-hidden="true"/></button>
     <nav ref={navRef} id={navId} className="site-nav" aria-label="主导航" onClick={event=>{if(event.target.closest('a'))close(false);}}><a href={withBasePath('/#works')}>作品</a><a href={withBasePath('/projects/walltime/')}>壁时</a><a href={withBasePath('/#about')}>关于</a><a href={withBasePath('/#contact')}>联系 <span aria-hidden="true">↗</span></a></nav>
   </div></header>;

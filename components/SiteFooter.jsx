@@ -8,6 +8,6 @@ export default function SiteFooter() {
     <h2>下一件好作品，<br />从一次交流开始。</h2>
     <a className="contact-mail" href={`mailto:${portfolio.email}`}>{portfolio.email}<Arrow diagonal /></a>
     <div className="footer-links"><a className="button button-outline" href={withBasePath(portfolio.resume)} target="_blank" rel="noopener noreferrer">查看简历 <Arrow diagonal /></a><a href={`tel:${portfolio.phone}`}>{portfolio.phone}</a><a href="https://wytq-da88.github.io/" target="_blank" rel="noopener noreferrer">原作品集 <span aria-hidden="true">↗</span></a></div>
-    <div className="footer-bottom"><span>© 2026 曹佳航</span><span>以器物，连接文化与日常。</span><MotionPreference/><a href="#top">回到顶部 ↑</a></div>
+    <div className="footer-bottom"><span>© 2026 曹佳航</span><span>让想象，有形发生。</span><MotionPreference/><a href="#top">回到顶部 ↑</a></div>
   </div></footer>;
 }

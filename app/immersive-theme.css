@@ -1,0 +1,28 @@
+:root { --paper:#f1f3f5; --ink:#18202c; --muted:#596575; --dark:#080a0e; --dark-muted:#a7b2c0; --gold:#a6d5ff; --gold-ink:#315572; --line:rgba(24,32,44,.16); }
+.site-header { background:rgba(8,10,14,.92); color:#f1f4f8; border-bottom-color:#d9e9ff20; backdrop-filter:blur(18px); }
+.identity-mark { display:inline-flex; align-items:flex-start; font-family:var(--sans); font-weight:650; font-size:32px; line-height:1; letter-spacing:-.09em; padding-right:6px; }
+.identity-mark>span { font-size:13px; color:#a6d5ff; line-height:1; margin:0 0 0 3px; letter-spacing:0; }
+.identity>span:last-child { font-size:15px; font-weight:500; }
+.identity small { font-weight:400; font-size:8px; letter-spacing:.1em; }
+.site-nav a { font-size:12px; }
+.site-nav a:last-child { border:1px solid #c7deff40; border-radius:999px; padding:10px 19px; }
+.site-footer { background:#090c12; padding-top:96px; border-top:1px solid #ffffff1f; }
+.site-footer h2 { font-family:var(--sans); font-weight:550; font-size:clamp(38px,4.8vw,72px); line-height:1.2; letter-spacing:-.055em; margin:42px 0; }
+.site-footer .contact-mail { font-family:var(--sans); letter-spacing:-.025em; }
+.site-footer .button { border-radius:999px; }
+.case-page h1,.case-page h2 { font-family:var(--sans); font-weight:550; letter-spacing:-.04em; }
+.walltime-context { display:flex; align-items:center; justify-content:space-between; gap:24px; padding-block:26px; }
+.walltime-context p { font-size:11px; color:var(--muted); }
+.case-page .case-opening { background:#e8edf2; }
+.case-page .case-cover-image { border-radius:4px; }
+@media(max-width:599px) {
+  .identity-mark { font-size:28px; }
+  .identity>span:last-child { font-size:14px; }
+  .identity small { font-size:7px; }
+  .site-header .site-nav { background:#0c111a; }
+  .site-header .site-nav a { font-size:17px; }
+  .site-header .site-nav a:last-child { padding:16px 0; border:0; border-radius:0; }
+  .site-footer { padding-top:64px; }
+  .site-footer h2 { font-size:36px; line-height:1.3; }
+  .walltime-context { align-items:flex-start; flex-direction:column; gap:6px; }
+}

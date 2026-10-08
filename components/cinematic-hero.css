@@ -1,0 +1,67 @@
+.cinematic-hero { position: relative; background: #080a0e; color: #f5f7fa; }
+.cinematic-sticky { position: relative; min-height: 700px; height: calc(100svh - 88px); max-height: 1100px; overflow: clip; isolation: isolate; }
+/* Reserve the same space before hydration so incoming fragment links stay aligned. */
+@media (min-width:960px) and (pointer:fine) {
+  .cinematic-hero { height: 142svh; }
+  .cinematic-hero .cinematic-sticky { position: sticky; top: 88px; }
+}
+.cinematic-camera { position: absolute; inset: -12px; z-index: -3; }
+.cinematic-image { width: 100%; height: 100%; object-fit: cover; object-position: 62% center; transform-origin: 67% 51%; }
+.cinematic-shade { position: absolute; inset: 0; z-index: -2; background: linear-gradient(90deg,rgba(6,8,13,.72),rgba(6,8,13,.12) 51%,transparent 76%),linear-gradient(0deg,rgba(6,8,13,.93),transparent 28%,transparent 80%,rgba(6,8,13,.28)); }
+.cinematic-top { position: relative; display: flex; justify-content: space-between; gap: 24px; padding-top: 36px; font-size: 10px; letter-spacing: .14em; color: #aab6c4; }
+.cinematic-copy { position: absolute; inset: 22% 0 auto; }
+.cinematic-copy:focus-within { opacity: 1!important; }
+.cinematic-kicker { display: flex; align-items: center; gap: 12px; font-size: 12px; letter-spacing: .12em; color: #c0d4e6; }
+.cinematic-kicker>span { height: 6px; width: 6px; border-radius: 50%; background: #b4e2ff; box-shadow: 0 0 18px rgba(137,209,255,.75); }
+.cinematic-copy h1 { font-family: var(--sans); font-size: clamp(66px,6.8vw,112px); line-height: 1.12; font-weight: 600; letter-spacing: -.065em; margin: 28px 0; }
+.cinematic-copy h1>span:not(.cinematic-english) { color: #b9d3e9; }
+.cinematic-description { white-space: pre-line; color: #aeb8c4; font-size: 15px; line-height: 1.85; max-width: 31em; }
+.cinematic-actions { display: flex; gap: 32px; align-items: center; margin-top: 38px; }
+.cinematic-cta { display: inline-flex; align-items: center; gap: 34px; min-height: 54px; padding: 15px 24px; border-radius: 999px; background: #e7f3ff; color: #142235; font-size: 13px; transition: transform .35s cubic-bezier(.2,.7,.2,1),background .25s; }
+.cinematic-cta:hover { transform: translateY(-4px); background: #abd8ff; }
+.cinematic-cta svg { width: 18px; height: 18px; }
+.cinematic-secondary { display: inline-flex; align-items: center; gap: 22px; min-height: 48px; color: #d2d9e3; font-size: 12px; }
+.cinematic-secondary:hover { color: #fff; }
+.cinematic-bottom { position: absolute; bottom: 30px; left: 0; right: 0; display: flex; align-items: center; justify-content: space-between; gap: 24px; border-top: 1px solid rgba(211,226,244,.22); padding-top: 23px; }
+.cinematic-bottom>div { display: flex; align-items: center; gap: 20px; font-size: 13px; letter-spacing: .12em; }
+.cinematic-bottom-number { display: grid; place-items: center; width: 42px; height: 42px; border: 1px solid rgba(211,226,244,.3); border-radius: 50%; font-size: 11px; }
+.cinematic-bottom-sub { display: block; margin-top: 4px; font-size: 9px; color: #9eacbc; letter-spacing: .05em; }
+.cinematic-bottom>p { font-size: 10px; color: #9eacbc; }
+.cinematic-scroll { width: 46px; height: 46px; border-radius: 50%; display: grid; place-items: center; border: 1px solid rgba(211,226,244,.3); font-size: 18px; transition: background .3s; }
+.cinematic-scroll:hover { background: rgba(176,218,255,.18); }
+.cinematic-english { display: block; color: #b9d3e9; font-size: .36em; letter-spacing: -.035em; margin-top: 20px; font-weight: 400; }
+.cinematic-project .cinematic-copy h1 { font-size: clamp(90px,10vw,160px); }
+@media (min-width:1600px) { .cinematic-copy { top: 24%; } }
+@media (max-width:959px) {
+  .cinematic-hero[data-animated=true] { height: auto; }
+  .cinematic-sticky,.cinematic-hero[data-animated=true] .cinematic-sticky { height: 960px; min-height: 0; position: relative; top: auto; }
+  .cinematic-image { object-fit: cover; object-position: 70% center; }
+  .cinematic-shade { background: linear-gradient(180deg,rgba(6,8,13,.8),rgba(6,8,13,.1) 53%,rgba(6,8,13,.8)); }
+  .cinematic-copy { top: 10%; }
+  .cinematic-copy h1 { font-size: 68px; }
+  .cinematic-description { max-width: 26em; }
+}
+@media (max-width:599px) {
+  .cinematic-sticky,.cinematic-hero[data-animated=true] .cinematic-sticky { height: 900px; }
+  .cinematic-top { padding-top: 25px; font-size: 8px; }
+  .cinematic-top>span:last-child { display: none; }
+  .cinematic-camera { inset: 235px -120px 38px -430px; }
+  .cinematic-image { object-fit: contain; object-position: 75% 60%; }
+  .cinematic-shade { background: linear-gradient(180deg,#080a0e 0%,rgba(8,10,14,.94) 24%,rgba(8,10,14,.3) 39%,transparent 56%,rgba(8,10,14,.92) 100%); }
+  .cinematic-copy { top: 78px; }
+  .cinematic-kicker { font-size: 10px; gap: 9px; }
+  .cinematic-copy h1 { font-size: clamp(43px,12vw,62px); line-height: 1.16; margin: 22px 0; letter-spacing: -.055em; }
+  .cinematic-description { font-size: 13px; line-height: 1.8; max-width: 24em; }
+  .cinematic-actions { margin-top: 24px; gap: 24px; }
+  .cinematic-cta { min-height: 48px; padding: 12px 20px; gap: 20px; font-size: 12px; }
+  .cinematic-secondary { font-size: 11px; gap: 10px; }
+  .cinematic-bottom { bottom: 24px; padding-top: 18px; gap: 10px; flex-wrap: wrap; }
+  .cinematic-bottom>div { font-size: 11px; gap: 12px; }
+  .cinematic-bottom>p { font-size: 8px; order: 3; flex: 1 1 100%; }
+  .cinematic-bottom-number { width: 34px; height: 34px; }
+  .cinematic-scroll { width: 44px; height: 44px; }
+  .cinematic-project .cinematic-copy h1 { font-size: 76px; margin: 18px 0; }
+  .cinematic-project .cinematic-description { max-width: 19em; }
+  .cinematic-project .cinematic-camera { top: 265px; }
+}
+@media(prefers-reduced-motion:reduce) { .cinematic-camera,.cinematic-image,.cinematic-copy { transform: none!important; } .cinematic-copy { opacity: 1!important; } }
